@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-outfit: "Outfit", sans-serif;
+  }
+
+  body {
+    @apply bg-slate-950 text-white;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    @apply bg-emerald-500/20 text-emerald-300;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20;
+  }
+}
