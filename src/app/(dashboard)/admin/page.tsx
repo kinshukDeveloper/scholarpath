@@ -23,7 +23,6 @@ import {
     Save, X, CheckCircle2,
     ToggleLeft, ToggleRight, RefreshCw, Loader2,
 } from "lucide-react"
-import DashboardLayout from "@/components/layout/DashboardLayout"
 import { Scholarship, BlogPost } from "@/types"
 import { createClient } from "@/lib/supabase/client"
 // import { User } from "@supabase/supabase-js"
@@ -1025,7 +1024,7 @@ export default function AdminPage() {
     const [tab, setTab] = useState("analytics")
 
     return (
-         <DashboardLayout title="Admin Panel" subtitle="Manage ScholarPath">
+         <>
             {/* Tab bar */}
             <div className="flex gap-1 mb-8 flex-wrap">
                 {TABS.map(t => {
@@ -1071,6 +1070,6 @@ export default function AdminPage() {
                     {tab === "blog" && <BlogTab />}
                 </motion.div>
             </AnimatePresence>
-        </DashboardLayout>
+        </>
     )
 }

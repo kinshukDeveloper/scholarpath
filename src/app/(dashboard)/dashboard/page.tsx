@@ -8,7 +8,6 @@
 
 import { useEffect, useState } from "react"
 import { createClient } from "@/lib/supabase/client"
-import DashboardLayout    from "@/components/layout/DashboardLayout"
 import StatsRow           from "@/components/dashboard/StatsRow"
 import {
   UpcomingDeadlines,
@@ -34,10 +33,7 @@ export default function DashboardPage() {
   const greeting = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening"
 
   return (
-    <DashboardLayout
-      title="Dashboard"
-      subtitle="Your scholarship overview"
-    >
+    <>
       <div className="space-y-8 max-w-5xl">
 
         {/* Greeting */}
@@ -63,6 +59,6 @@ export default function DashboardPage() {
           </div>
         )}
       </div>
-    </DashboardLayout>
+    </>
   )
 }
