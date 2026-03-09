@@ -18,7 +18,7 @@ export default function robots(): MetadataRoute.Robots {
           "/api/",          // API routes
           "/admin/",        // admin panel
           "/settings/",
-          "/bookmarks/",
+          "/saved/",
           "/applications/",
         ],
       },

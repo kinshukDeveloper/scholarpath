@@ -42,7 +42,7 @@ import type { User as SupabaseUser } from "@supabase/supabase-js"
 const NAV_ITEMS = [
   { href: "/dashboard",      label: "Overview",      icon: LayoutDashboard },
   { href: "/scholarships",   label: "Scholarships",  icon: GraduationCap   },
-  { href: "/bookmarks",      label: "Saved",         icon: Bookmark        },
+  { href: "/saved",      label: "Saved",         icon: Bookmark        },
   { href: "/reminders",      label: "Reminders",     icon: Bell            },
   { href: "/applications",   label: "Applications",  icon: FileText        },
 ]

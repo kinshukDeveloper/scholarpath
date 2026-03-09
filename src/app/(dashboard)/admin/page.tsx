@@ -1025,7 +1025,7 @@ export default function AdminPage() {
     const [tab, setTab] = useState("analytics")
 
     return (
-        <DashboardLayout title="Admin Panel" subtitle="Manage ScholarPath">
+         <DashboardLayout title="Admin Panel" subtitle="Manage ScholarPath">
             {/* Tab bar */}
             <div className="flex gap-1 mb-8 flex-wrap">
                 {TABS.map(t => {
