@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   // Google Search Console verification
   // Replace with your actual token from https://search.google.com/search-console
   verification: {
-    google: "REPLACE_WITH_GSC_TOKEN",
+    google: "mT-AAQSytqKDrLvv1cBBWRHClaCDf8SYqDcj-dcI1nM",
   },
 
   // App manifest
